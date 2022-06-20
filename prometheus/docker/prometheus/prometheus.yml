@@ -8,3 +8,6 @@ scrape_configs:
   - job_name: "python-exporter-plus"
     static_configs:
       - targets: ["python-exporter-plus:8000"]
+  - job_name: "pushgateway"
+    static_configs:
+      - targets: ["pushgateway:9091"]
