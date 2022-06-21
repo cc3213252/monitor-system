@@ -4,3 +4,10 @@ route:
 receivers:
   - name: demo
     email_configs:
+      - to: cc3213252@163.com
+        from: cc3213252@163.com
+        smarthost: smtp.163.com:25
+        auth_username: cc3213252@163.com
+        auth_identity: cc3213252@163.com
+        auth_password: 改成密码
+        send_resolved: true
