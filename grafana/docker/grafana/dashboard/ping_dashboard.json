@@ -16,6 +16,7 @@
   "gnetId": null,
   "graphTooltip": 0,
   "id": 1,
+  "iteration": 1655887666828,
   "links": [],
   "panels": [
     {
@@ -257,6 +258,353 @@
       "type": "table"
     },
     {
+      "aliasColors": {},
+      "bars": false,
+      "dashLength": 10,
+      "dashes": false,
+      "datasource": null,
+      "fieldConfig": {
+        "defaults": {
+          "custom": {}
+        },
+        "overrides": []
+      },
+      "fill": 1,
+      "fillGradient": 0,
+      "gridPos": {
+        "h": 7,
+        "w": 8,
+        "x": 0,
+        "y": 7
+      },
+      "hiddenSeries": false,
+      "id": 14,
+      "legend": {
+        "avg": false,
+        "current": false,
+        "max": false,
+        "min": false,
+        "show": true,
+        "total": false,
+        "values": false
+      },
+      "lines": true,
+      "linewidth": 1,
+      "nullPointMode": "null",
+      "options": {
+        "alertThreshold": true
+      },
+      "percentage": false,
+      "pluginVersion": "7.3.4",
+      "pointradius": 2,
+      "points": false,
+      "renderer": "flot",
+      "repeat": "url",
+      "scopedVars": {
+        "url": {
+          "selected": true,
+          "text": "amazon.cn",
+          "value": "amazon.cn"
+        }
+      },
+      "seriesOverrides": [],
+      "spaceLength": 10,
+      "stack": false,
+      "steppedLine": false,
+      "targets": [
+        {
+          "expr": "ping_average_response_ms{url=~\"$url\"}",
+          "interval": "",
+          "legendFormat": "average",
+          "refId": "A"
+        },
+        {
+          "expr": "ping_maximum_response_ms{url=~\"$url\"}",
+          "interval": "",
+          "legendFormat": "maximum",
+          "refId": "B"
+        },
+        {
+          "expr": "ping_minimum_response_ms{url=~\"$url\"}",
+          "interval": "",
+          "legendFormat": "minimum",
+          "refId": "C"
+        }
+      ],
+      "thresholds": [],
+      "timeFrom": null,
+      "timeRegions": [],
+      "timeShift": null,
+      "title": "variable $url",
+      "tooltip": {
+        "shared": true,
+        "sort": 0,
+        "value_type": "individual"
+      },
+      "type": "graph",
+      "xaxis": {
+        "buckets": null,
+        "mode": "time",
+        "name": null,
+        "show": true,
+        "values": []
+      },
+      "yaxes": [
+        {
+          "format": "short",
+          "label": null,
+          "logBase": 1,
+          "max": null,
+          "min": null,
+          "show": true
+        },
+        {
+          "format": "short",
+          "label": null,
+          "logBase": 1,
+          "max": null,
+          "min": null,
+          "show": true
+        }
+      ],
+      "yaxis": {
+        "align": false,
+        "alignLevel": null
+      }
+    },
+    {
+      "aliasColors": {},
+      "bars": false,
+      "dashLength": 10,
+      "dashes": false,
+      "datasource": null,
+      "fieldConfig": {
+        "defaults": {
+          "custom": {}
+        },
+        "overrides": []
+      },
+      "fill": 1,
+      "fillGradient": 0,
+      "gridPos": {
+        "h": 7,
+        "w": 8,
+        "x": 8,
+        "y": 7
+      },
+      "hiddenSeries": false,
+      "id": 15,
+      "legend": {
+        "avg": false,
+        "current": false,
+        "max": false,
+        "min": false,
+        "show": true,
+        "total": false,
+        "values": false
+      },
+      "lines": true,
+      "linewidth": 1,
+      "nullPointMode": "null",
+      "options": {
+        "alertThreshold": true
+      },
+      "percentage": false,
+      "pluginVersion": "7.3.4",
+      "pointradius": 2,
+      "points": false,
+      "renderer": "flot",
+      "repeatIteration": 1655887666828,
+      "repeatPanelId": 14,
+      "scopedVars": {
+        "url": {
+          "selected": true,
+          "text": "amazon.com",
+          "value": "amazon.com"
+        }
+      },
+      "seriesOverrides": [],
+      "spaceLength": 10,
+      "stack": false,
+      "steppedLine": false,
+      "targets": [
+        {
+          "expr": "ping_average_response_ms{url=~\"$url\"}",
+          "interval": "",
+          "legendFormat": "average",
+          "refId": "A"
+        },
+        {
+          "expr": "ping_maximum_response_ms{url=~\"$url\"}",
+          "interval": "",
+          "legendFormat": "maximum",
+          "refId": "B"
+        },
+        {
+          "expr": "ping_minimum_response_ms{url=~\"$url\"}",
+          "interval": "",
+          "legendFormat": "minimum",
+          "refId": "C"
+        }
+      ],
+      "thresholds": [],
+      "timeFrom": null,
+      "timeRegions": [],
+      "timeShift": null,
+      "title": "variable $url",
+      "tooltip": {
+        "shared": true,
+        "sort": 0,
+        "value_type": "individual"
+      },
+      "type": "graph",
+      "xaxis": {
+        "buckets": null,
+        "mode": "time",
+        "name": null,
+        "show": true,
+        "values": []
+      },
+      "yaxes": [
+        {
+          "format": "short",
+          "label": null,
+          "logBase": 1,
+          "max": null,
+          "min": null,
+          "show": true
+        },
+        {
+          "format": "short",
+          "label": null,
+          "logBase": 1,
+          "max": null,
+          "min": null,
+          "show": true
+        }
+      ],
+      "yaxis": {
+        "align": false,
+        "alignLevel": null
+      }
+    },
+    {
+      "aliasColors": {},
+      "bars": false,
+      "dashLength": 10,
+      "dashes": false,
+      "datasource": null,
+      "fieldConfig": {
+        "defaults": {
+          "custom": {}
+        },
+        "overrides": []
+      },
+      "fill": 1,
+      "fillGradient": 0,
+      "gridPos": {
+        "h": 7,
+        "w": 8,
+        "x": 16,
+        "y": 7
+      },
+      "hiddenSeries": false,
+      "id": 16,
+      "legend": {
+        "avg": false,
+        "current": false,
+        "max": false,
+        "min": false,
+        "show": true,
+        "total": false,
+        "values": false
+      },
+      "lines": true,
+      "linewidth": 1,
+      "nullPointMode": "null",
+      "options": {
+        "alertThreshold": true
+      },
+      "percentage": false,
+      "pluginVersion": "7.3.4",
+      "pointradius": 2,
+      "points": false,
+      "renderer": "flot",
+      "repeatIteration": 1655887666828,
+      "repeatPanelId": 14,
+      "scopedVars": {
+        "url": {
+          "selected": true,
+          "text": "amazon.de",
+          "value": "amazon.de"
+        }
+      },
+      "seriesOverrides": [],
+      "spaceLength": 10,
+      "stack": false,
+      "steppedLine": false,
+      "targets": [
+        {
+          "expr": "ping_average_response_ms{url=~\"$url\"}",
+          "interval": "",
+          "legendFormat": "average",
+          "refId": "A"
+        },
+        {
+          "expr": "ping_maximum_response_ms{url=~\"$url\"}",
+          "interval": "",
+          "legendFormat": "maximum",
+          "refId": "B"
+        },
+        {
+          "expr": "ping_minimum_response_ms{url=~\"$url\"}",
+          "interval": "",
+          "legendFormat": "minimum",
+          "refId": "C"
+        }
+      ],
+      "thresholds": [],
+      "timeFrom": null,
+      "timeRegions": [],
+      "timeShift": null,
+      "title": "variable $url",
+      "tooltip": {
+        "shared": true,
+        "sort": 0,
+        "value_type": "individual"
+      },
+      "type": "graph",
+      "xaxis": {
+        "buckets": null,
+        "mode": "time",
+        "name": null,
+        "show": true,
+        "values": []
+      },
+      "yaxes": [
+        {
+          "format": "short",
+          "label": null,
+          "logBase": 1,
+          "max": null,
+          "min": null,
+          "show": true
+        },
+        {
+          "format": "short",
+          "label": null,
+          "logBase": 1,
+          "max": null,
+          "min": null,
+          "show": true
+        }
+      ],
+      "yaxis": {
+        "align": false,
+        "alignLevel": null
+      }
+    },
+    {
       "datasource": null,
       "fieldConfig": {
         "defaults": {
@@ -283,7 +631,7 @@
         "h": 4,
         "w": 24,
         "x": 0,
-        "y": 7
+        "y": 14
       },
       "id": 10,
       "options": {
@@ -333,7 +681,7 @@
         "h": 8,
         "w": 12,
         "x": 0,
-        "y": 11
+        "y": 18
       },
       "hiddenSeries": false,
       "id": 4,
@@ -446,7 +794,7 @@
         "h": 8,
         "w": 12,
         "x": 12,
-        "y": 11
+        "y": 18
       },
       "hiddenSeries": false,
       "id": 2,
@@ -536,7 +884,103 @@
   "style": "dark",
   "tags": [],
   "templating": {
-    "list": []
+    "list": [
+      {
+        "allValue": null,
+        "current": {
+          "selected": false,
+          "text": "testing",
+          "value": "testing"
+        },
+        "datasource": "Prometheus",
+        "definition": "label_values(environment)",
+        "error": null,
+        "hide": 0,
+        "includeAll": false,
+        "label": null,
+        "multi": false,
+        "name": "environment",
+        "options": [
+          {
+            "selected": true,
+            "text": "testing",
+            "value": "testing"
+          }
+        ],
+        "query": "label_values(environment)",
+        "refresh": 0,
+        "regex": "",
+        "skipUrlSync": false,
+        "sort": 0,
+        "tagValuesQuery": "",
+        "tags": [],
+        "tagsQuery": "",
+        "type": "query",
+        "useTags": false
+      },
+      {
+        "allValue": null,
+        "current": {
+          "selected": true,
+          "tags": [],
+          "text": [
+            "amazon.cn",
+            "amazon.com",
+            "amazon.de"
+          ],
+          "value": [
+            "amazon.cn",
+            "amazon.com",
+            "amazon.de"
+          ]
+        },
+        "datasource": "Prometheus",
+        "definition": "ping_average_response_ms{environment=\"$environment\"}",
+        "error": null,
+        "hide": 0,
+        "includeAll": false,
+        "label": null,
+        "multi": true,
+        "name": "url",
+        "options": [
+          {
+            "selected": true,
+            "text": "amazon.cn",
+            "value": "amazon.cn"
+          },
+          {
+            "selected": true,
+            "text": "amazon.com",
+            "value": "amazon.com"
+          },
+          {
+            "selected": true,
+            "text": "amazon.de",
+            "value": "amazon.de"
+          },
+          {
+            "selected": false,
+            "text": "amazon.jp",
+            "value": "amazon.jp"
+          },
+          {
+            "selected": false,
+            "text": "host1",
+            "value": "host1"
+          }
+        ],
+        "query": "ping_average_response_ms{environment=\"$environment\"}",
+        "refresh": 0,
+        "regex": "/.*url=\\\"([^\\\"]*).*/",
+        "skipUrlSync": false,
+        "sort": 0,
+        "tagValuesQuery": "",
+        "tags": [],
+        "tagsQuery": "",
+        "type": "query",
+        "useTags": false
+      }
+    ]
   },
   "time": {
     "from": "now-30m",
@@ -546,5 +990,5 @@
   "timezone": "",
   "title": "ping dashboard",
   "uid": "kfQVTSqnz",
-  "version": 2
+  "version": 4
 }
