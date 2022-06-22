@@ -13,3 +13,5 @@ Y-axis: 2
 Color: red  
 
 dashboard的导出和引入等操作
+
+## 08 stat gauge等操作
