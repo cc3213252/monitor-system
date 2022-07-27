@@ -26,3 +26,12 @@ summary，摘要
 
 ## jobs and instances
 
+一个单独的进程，抓取的一个端点，叫instance。  
+一组instance，监控同一个目的，叫job  
+
+监控监控系统本身的sample：  
+up{job="<job-name>", instance="<instance-id>"}  
+scrape_duration_seconds{job="<job-name>", instance="<instance-id>"}  
+scrape_samples_post_metric_relabeling{job="<job-name>", instance="<instance-id>"}  
+scrape_samples_scraped{job="<job-name>", instance="<instance-id>"}  
+scrape_series_added{job="<job-name>", instance="<instance-id>"}  
