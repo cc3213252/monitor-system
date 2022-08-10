@@ -52,3 +52,11 @@ alerting也可以高可用
 
 ENABLE_METRICS=true，设置这个增加prometheus监控  
 可以增加[nginx监控面板](https://github.com/gilbN/lsio-docker-mods/tree/master/letsencrypt/geoip2-nginx-stats)
+
+设置日志等级debug来调试问题，特别是renderer类问题  
+缺少lib类问题  
+
+grafana live是一个实时消息引擎，可以发给自己的前端，也可以用订阅推送功能
+比如dashboard发生变化了等消息  
+
+【重要】[telegraf的数据可以直接在grafana展示](https://grafana.com/tutorials/stream-metrics-from-telegraf-to-grafana/)

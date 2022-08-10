@@ -1,0 +1,1 @@
+State timeline，time series数据通过设置阈值，可以画出不同色块的状态走势
